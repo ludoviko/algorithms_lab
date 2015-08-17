@@ -1,7 +1,7 @@
 package com.lam.coursera.princeton.algorithms.sortingWComparator;
 
 import java.util.Comparator;
-// Comment.
+// Comment. More.
 public abstract class ArraySortAbstractWComparator<T> implements ArraySortWComparator_I<T> {
 	
 	protected Comparator<T> comparator;
