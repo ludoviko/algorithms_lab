@@ -24,7 +24,11 @@ public abstract class ArraySortAbstractWComparator<T> implements ArraySortWCompa
 		return true;
 	}
 
-	public int findMinimumIndex(T[] array, int from) {
+    public void setComparator(Comparator<T> comparator) {
+        this.comparator = comparator;
+    }
+
+    public int findMinimumIndex(T[] array, int from) {
 		int minimum = from;
 
 		for (int i = from; i < array.length; i++) {

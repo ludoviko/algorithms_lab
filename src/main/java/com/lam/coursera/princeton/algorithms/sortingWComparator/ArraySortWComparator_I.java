@@ -6,5 +6,6 @@ public interface ArraySortWComparator_I<T> {
 
 	public T[] sort(T[] array, Comparator<T> comparator) ;
 	public T[] sort(T[] array) ;
+	public void setComparator(Comparator<T> comparator);
 
 }

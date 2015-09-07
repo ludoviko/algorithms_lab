@@ -10,7 +10,6 @@ public class InsertionArraySortWComparator<T> extends ArraySortAbstractWComparat
 	    this.comparator = NaturalComparator.INSTANCE;
 	}
 	
-	@Override
 	public T[] sort(T[] array, Comparator<T> comparator) {
 		int step = 1;
 		
@@ -23,7 +22,6 @@ public class InsertionArraySortWComparator<T> extends ArraySortAbstractWComparat
 		return array;
 	}
 
-	@Override
 	public T[] sort(T[] array) {
 		int step = 1;
 		
@@ -33,7 +31,7 @@ public class InsertionArraySortWComparator<T> extends ArraySortAbstractWComparat
 
 		return array;
 	}
-	
+
 	public void transverseToTheLeft(T[] array, int from, int step) {
 		for (int i = from; i > 0; i = i - step) {
 			if (this.less(array[i], array[i-step])) {
