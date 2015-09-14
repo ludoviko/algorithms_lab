@@ -9,9 +9,9 @@ import java.util.Comparator;
 
 // XXX Work in progress
 // XXX test missing.
-public class SelectionArraySortCompare<T> extends ArraySortAbstractWComparator<T> {
+public class SelectionArraySortWComparator<T> extends ArraySortAbstractWComparator<T> {
 
-	public SelectionArraySortCompare() {
+	public SelectionArraySortWComparator() {
         this.comparator = NaturalComparator.INSTANCE;
 	}
 
