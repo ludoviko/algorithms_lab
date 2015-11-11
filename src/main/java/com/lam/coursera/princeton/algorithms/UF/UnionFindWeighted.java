@@ -49,6 +49,7 @@ public class UnionFindWeighted implements UnionFind_I {
 		this.validate(p);
 
 		while (this.array[p] != p) {
+			// Path compression.
 			this.array[p] = this.array[this.array[p]];
 			p = this.array[p];
 		}
