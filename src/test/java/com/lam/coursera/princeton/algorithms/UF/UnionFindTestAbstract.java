@@ -123,4 +123,21 @@ public abstract class UnionFindTestAbstract {
 	public void testSize() {
 		Assert.fail("Not yet implemented");
 	}
+
+	@Test
+	public void testConnected_3() {
+		this.uf.union(0, 1);
+		this.uf.union(1, 2);
+		this.uf.union(2, 3);
+        this.uf.union(3, 4);
+        this.uf.union(4, 5);
+
+        this.uf.union(6, 7);
+        this.uf.union(7, 8);
+        this.uf.union(8, 9);
+
+        this.uf.union(9, 5);
+        this.uf.union(10, 0);
+        this.uf.union(11, 6);
+	}
 }
