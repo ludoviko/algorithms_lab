@@ -208,6 +208,6 @@ public class DijkstraAlgorithm {
 		System.out.println();
 		System.out.println(dijkstra.find());
 
-
+      // 6, 8, 60.
 	}
 }
