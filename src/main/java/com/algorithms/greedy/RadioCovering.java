@@ -7,7 +7,7 @@ import java.util.*;
  *
  */
 
-// Source: Grooking Algorithms, page 141.
+// Source: Groking Algorithms, page 141.
 
 public class RadioCovering {
     private Set<String> states;

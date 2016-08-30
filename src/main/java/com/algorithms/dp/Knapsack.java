@@ -3,6 +3,8 @@ package com.algorithms.dp;
 import java.util.ArrayList;
 import java.util.List;
 
+// Source: Grooking Algorithms, page 161.
+
 public class Knapsack {
     private int capacity;
     private int rows;
