@@ -10,12 +10,20 @@ public class Knapsack {
     private int rows;
     private List<Item> items;
     private float[][] array;
+    private float granularity;
 
-    public Knapsack(int capacity, List<Item> items) {
-        this.capacity = capacity + 1;
+
+    public Knapsack(int capacity, float granularity, List<Item> items) {
+        this.capacity = (int) (capacity / granularity + 1);
         this.items = items;
         rows = items.size() + 1;
-        array = new float[rows][this.capacity];
+        this.granularity = granularity;
+
+        array = new float[rows][(int) ( this.capacity )];
+    }
+
+    public Knapsack(int capacity, List<Item> items) {
+        this(capacity, 1, items);
     }
 
     public void fillSolutionArray() {
@@ -23,16 +31,17 @@ public class Knapsack {
 
         for (int i = 1; i < array.length; i++) {
             for (int j = 1; j < array[0].length; j++) {
+                float weight = j * this.granularity;
                 // Find the (i-1,j) value of the array.
                 previous = findCell(i - 1, j);
                 // Check whether there is still weight available.
-                if (items.get(i - 1).getWeight() > j) {
+                if (items.get(i - 1).getWeight() > weight) {
                     // Copy the previous value into the cell.
                     this.array[i][j] = previous;
-                } else if (items.get(i - 1).getWeight() == j) {
+                } else if (items.get(i - 1).getWeight() == weight) {
                     this.array[i][j] = Math.max(previous, items.get(i - 1).getValue());
                 } else {
-                    this.array[i][j] = Math.max(previous, items.get(i - 1).getValue() + this.array[i - 1][j - items.get(i - 1).getWeight()]);
+                    this.array[i][j] = Math.max(previous, items.get(i - 1).getValue() + this.array[i - 1][((int) (j - items.get(i - 1).getWeight() / this.granularity))]);
                 }
             }
         }
@@ -62,14 +71,31 @@ public class Knapsack {
         return array;
     }
 
+    public float getGranularity() {
+        return this.granularity;
+    }
+
     public static void main(String[] strings) {
         List<Item> items = new ArrayList<Item>();
         items.add(new Item("Guiter", 1, 1500));
         items.add(new Item("Stereo", 4, 3000));
         items.add(new Item("Laptop", 3, 2000));
+        items.add(new Item("I Phone", 1, 2000));
         Knapsack knapsack = new Knapsack(4, items);
         knapsack.fillSolutionArray();
-        // 3500 expected
+        // 4000 expected
         System.out.println(knapsack.getSolution());
+
+         items = new ArrayList<Item>();
+        items.add(new Item("Westminster Abbey", 0.5f, 7));
+        items.add(new Item("Globe Theater", 0.5f, 6));
+        items.add(new Item("National Gallery", 1, 9));
+        items.add(new Item("British Museum", 2, 9));
+        items.add(new Item("St Pauls Cathedral", 0.5f, 8));
+        knapsack = new Knapsack(2, 0.5f,  items);
+        knapsack.fillSolutionArray();
+        // 24  expected
+        System.out.println(knapsack.getSolution());
+
     }
 }
