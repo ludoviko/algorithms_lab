@@ -97,5 +97,17 @@ public class Knapsack {
         // 24  expected
         System.out.println(knapsack.getSolution());
 
+        items = new ArrayList<Item>();
+        items.add(new Item("Water", 3, 10));
+        items.add(new Item("Book", 1, 3));
+        items.add(new Item("Food", 2, 9));
+        items.add(new Item("Jacket", 2, 5));
+        items.add(new Item("Camera", 1, 6));
+
+        knapsack = new Knapsack(6,  items);
+        knapsack.fillSolutionArray();
+        //   25 expected.
+        System.out.println(knapsack.getSolution());
+
     }
 }
