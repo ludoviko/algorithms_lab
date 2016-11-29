@@ -1,11 +1,10 @@
-package com.algorithms.priorityQueue.test;
+package com.algorithms.priorityQueue;
 
 import java.util.Comparator;
 
 import org.junit.After;
 import org.junit.Before;
 
-import com.algorithms.priorityQueue.HeapOrderedPriorityQueue;
 import com.algorithms.queue.Queue;
 
 public class HeapPriorityQueueTestCase extends AbstractPriorityQueueTestCase {

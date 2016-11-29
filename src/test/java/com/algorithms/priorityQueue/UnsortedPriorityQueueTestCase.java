@@ -1,8 +1,7 @@
-package com.algorithms.priorityQueue.test;
+package com.algorithms.priorityQueue;
 
 import java.util.Comparator;
 
-import com.algorithms.priorityQueue.UnsortedPriorityQueue;
 import com.algorithms.queue.Queue;
 
 public class UnsortedPriorityQueueTestCase extends AbstractPriorityQueueTestCase {

@@ -1,4 +1,4 @@
-package com.algorithms.priorityQueue.test;
+package com.algorithms.priorityQueue;
 
 import java.util.Comparator;
 //import java.util.Queue;
@@ -10,7 +10,7 @@ import com.algorithms.sortStd.comparator.ReverseComparator;
 import junit.framework.TestCase;
 
 /**
- * Abstract base class for testing implementations of LIFO {@link com.wrox.algorithms.queues.Queue}s.
+ * Abstract base class for testing implementations of LIFO { com.wrox.algorithms.queues.Queue}s.
  *
  */
 public abstract class AbstractPriorityQueueTestCase extends TestCase {
