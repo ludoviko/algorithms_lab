@@ -1,7 +1,4 @@
-package com.algorithms.map.test;
-
-import com.algorithms.map.ListMap;
-import com.algorithms.map.Map;
+package com.algorithms.map;
 
 /**
  */

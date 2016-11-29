@@ -1,4 +1,4 @@
-package com.algorithms.map.test;
+package com.algorithms.map;
 
 import com.algorithms.exception.IteratorOutOfBoundsException;
 import com.algorithms.iterator.Iterator;
