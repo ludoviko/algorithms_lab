@@ -1,9 +1,8 @@
-package com.algorithms.iterator.tests;
+package com.algorithms.iterator;
 
 import junit.framework.TestCase;
 
 import com.algorithms.exception.IteratorOutOfBoundsException;
-import com.algorithms.iterator.ReverseArrayIterator;
 
 
 public class ReverseArrayIteratorTest extends TestCase {
