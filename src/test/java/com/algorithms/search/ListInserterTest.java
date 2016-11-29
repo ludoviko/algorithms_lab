@@ -1,4 +1,4 @@
-package com.algorithms.search.test;
+package com.algorithms.search;
 
 import java.util.ArrayList;
 import java.util.Comparator;

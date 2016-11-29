@@ -1,12 +1,9 @@
-package com.algorithms.search.test;
+package com.algorithms.search;
 
 import java.util.Comparator;
 
 import org.junit.After;
 import org.junit.Before;
-
-import com.algorithms.search.IterativeBinaryListSearcher;
-import com.algorithms.search.ListSearcher;
 
 public class IterativeBinaryListSearcherTest extends AbstractListSearchTest {
 

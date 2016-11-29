@@ -1,4 +1,4 @@
-package com.algorithms.stack.tests;
+package com.algorithms.stack;
 
 import org.junit.Test;
 

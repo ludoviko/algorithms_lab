@@ -1,13 +1,7 @@
-package com.algorithms.stack.tests;
-
-import static org.junit.Assert.*;
+package com.algorithms.stack;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Test;
-
-import com.algorithms.stack.ListStack;
-import com.algorithms.stack.Stack;
 
 public class LinkStackTest extends AbstractStackTestCase {
 

@@ -1,4 +1,4 @@
-package com.algorithms.tree.test;
+package com.algorithms.tree;
 
 import java.util.Comparator;
 
@@ -8,8 +8,6 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import com.algorithms.sortStd.comparator.NaturalComparator;
-import com.algorithms.tree.BinarySearchTree;
-import com.algorithms.tree.Node;
 
 @Ignore
 public class BinarySearchTreeTest extends TestCase {

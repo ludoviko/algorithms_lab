@@ -1,8 +1,6 @@
-package com.algorithms.tree.test;
+package com.algorithms.tree;
 
 import org.junit.Test;
-
-import com.algorithms.tree.Node;
 
 import junit.framework.TestCase;
 

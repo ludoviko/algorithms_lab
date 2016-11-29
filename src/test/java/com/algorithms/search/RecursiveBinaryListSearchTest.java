@@ -1,13 +1,10 @@
-package com.algorithms.search.test;
+package com.algorithms.search;
 
 
 import java.util.Comparator;
 
 import org.junit.After;
 import org.junit.Before;
-
-import com.algorithms.search.ListSearcher;
-import com.algorithms.search.RecursiveBinaryListSearch;
 
 public class RecursiveBinaryListSearchTest extends AbstractListSearchTest {
 	@Before

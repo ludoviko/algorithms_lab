@@ -1,11 +1,10 @@
-package com.algorithms.queue.tests;
+package com.algorithms.queue;
 
 import org.junit.Test;
 
 import junit.framework.TestCase;
 
 import com.algorithms.exception.EmptyQueueException;
-import com.algorithms.queue.Queue;
 
 public abstract class AbstractFifoQueueTestCase extends TestCase {
 	Queue queue;
