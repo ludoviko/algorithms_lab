@@ -1,4 +1,4 @@
-package com.algorithms.hashing.test;
+package com.algorithms.hashing;
 
 import org.junit.Test;
 
