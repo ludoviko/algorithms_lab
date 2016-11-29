@@ -1,7 +1,4 @@
-package com.algorithms.list.test;
-
-import com.algorithms.list.ArrayList;
-import com.algorithms.list.List;
+package com.algorithms.list;
 
 public class ArrayListTest extends AbstractListTestCase {
 

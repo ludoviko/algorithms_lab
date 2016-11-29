@@ -1,9 +1,8 @@
-package com.algorithms.list.test;
+package com.algorithms.list;
 
 
 import com.algorithms.exception.IteratorOutOfBoundsException;
 import com.algorithms.iterator.Iterator;
-import com.algorithms.list.List;
 
 import junit.framework.TestCase;
 
