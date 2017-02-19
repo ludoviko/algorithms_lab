@@ -33,6 +33,7 @@ public abstract class AbstractListSorterTest extends TestCase {
 		this._unsorted.add("development");
 		this._unsorted.add("is");
 		this._unsorted.add("nice");
+		this._unsorted.add("zzz");
 
 
 		this._sorted.add("development");
@@ -40,6 +41,7 @@ public abstract class AbstractListSorterTest extends TestCase {
 		this._sorted.add("is");
 		this._sorted.add("nice");
 		this._sorted.add("test");
+		this._sorted.add("zzz");
 	}
 
 	@Override
