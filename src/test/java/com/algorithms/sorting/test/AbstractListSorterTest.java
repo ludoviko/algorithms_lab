@@ -9,7 +9,7 @@ import org.junit.Test;
 
 import com.algorithms.list.LinkedList;
 import com.algorithms.list.List;
-import com.algorithms.sorting.ListSorter;
+import com.algorithms.sorting.ListSorter_I;
 import com.algorithms.sorting.comparator.Comparator;
 import com.algorithms.sorting.comparator.NaturalComparator;
 
@@ -18,7 +18,7 @@ public abstract class AbstractListSorterTest extends TestCase {
 	private List _unsorted;
 	private List _sorted;
 	
-	protected abstract ListSorter createListSorter(Comparator comparator);
+	protected abstract ListSorter_I createListSorter(Comparator comparator);
 	
 	@Override
 	@Before
@@ -52,7 +52,7 @@ public abstract class AbstractListSorterTest extends TestCase {
 
     @Test(timeout = 2000)
 	public void test() {
-		ListSorter sorter = this.createListSorter(NaturalComparator.INSTANCE);
+		ListSorter_I sorter = this.createListSorter(NaturalComparator.INSTANCE);
 	    assertEquals(this._sorted, sorter.sort(this._unsorted));		
 	}
 

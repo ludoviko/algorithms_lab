@@ -2,7 +2,7 @@ package com.algorithms.sorting.test;
 
 import org.junit.Ignore;
 
-import com.algorithms.sorting.ListSorter;
+import com.algorithms.sorting.ListSorter_I;
 import com.algorithms.sorting.SelectionSortListSorter;
 import com.algorithms.sorting.comparator.Comparator;
 
@@ -12,7 +12,7 @@ public class SelectionSortListSorterTest extends AbstractListSorterTest {
 
 	@Override
 	@Ignore	
-	protected ListSorter createListSorter(Comparator comparator) {
+	protected ListSorter_I createListSorter(Comparator comparator) {
 		return new SelectionSortListSorter(comparator); 
 	}
 
