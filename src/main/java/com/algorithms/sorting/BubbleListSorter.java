@@ -3,7 +3,7 @@ package com.algorithms.sorting;
 import com.algorithms.list.List;
 import com.algorithms.sorting.comparator.Comparator;
 
-public class BubbleListSorter implements ListSorter {
+public class BubbleListSorter implements ListSorter_I {
 
 	private Comparator comparator;
 	
